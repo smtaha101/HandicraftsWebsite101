@@ -1,0 +1,638 @@
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar
+{
+    background-color: #111;
+    width: 15px;
+}
+::-webkit-scrollbar-thumb
+{
+    background-color: #fc5a6d;
+    border-radius: 20px;
+    border: 5px solid #000;
+}
+/* Header Section Start  */
+header
+{
+    position: relative;
+    width: 100%;
+    height: 15vh;
+    padding: 0px 250px;
+    background: url("../images/header_bg.jpg");
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header::before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+header .logo
+{
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+header .searchBar
+{
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 1000;
+}
+header .searchBar .searchbox
+{
+    display: flex;
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 2px;
+    padding: 8px 5px;
+    height: 5vh;
+}
+header .searchBar .searchbox input
+{
+    width: 85%;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    font-size: 15px;
+    background-color: transparent;
+    color: #fff;
+}
+header .searchBar .searchbox input::placeholder
+{
+    color: rgba(255, 255, 255);
+    letter-spacing: 1px;
+}
+header .searchBar .searchbox button
+{
+    width: 50px;
+    height: 100%;
+    background-color: #fc5a6d;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 0px;
+    cursor: pointer;
+}
+/* Header Section End  */
+
+/* Navigation Section Start  */
+nav
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8vh;
+    background-color: #fc5a6d;
+}
+nav ul
+{
+    display: flex;
+    height: 100%;
+}
+nav ul li
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+    margin-left: 80px;
+    height: 100%;    
+    transition-duration: 0.3s;
+}
+nav ul li:hover
+{
+    background-color: #fff;
+}
+nav ul li:hover a
+{
+    color: #fc5a6d;
+}
+nav ul li a 
+{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: 'Style Script', cursive;
+    letter-spacing: 2px;
+    padding: 5px 10px;
+    color: #fff;
+    transition-duration: 0.5s;
+}
+/* Navigation Section End  */
+
+/* Banner Section Start  */
+.banner
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url("../images/slide1.jpg");
+    background-size: cover;
+}
+.banner::before
+{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.banner .bannerContent
+{
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    /* border: 1px solid #fff; */
+    z-index: 1000;
+    padding: 10px;
+    text-align: center;
+}
+.banner .bannerContent h2
+{
+    font-family: 'Style Script', cursive;
+    color: #fc5a6d;
+    font-size: 2.2em;
+    letter-spacing: 3px;
+    font-weight: 200;
+}
+.banner .bannerContent h1
+{
+    font-family: 'Poppins', sans-serif;
+    color: #ffff;
+    font-size: 5em;
+    letter-spacing: 3px;
+    font-weight: 400;
+    text-shadow: 0 0 20px #000;
+}
+.banner .bannerContent p
+{
+    color: #fff;
+    margin-top: 10px;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    
+}
+.banner .bannerContent .bannerBtn
+{
+    padding: 8px 30px;
+    margin-top: 30px;
+    background-color: #ff4e62;
+    color: #000;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    border: none;
+    transition-duration: 0.4s;
+}
+.banner .bannerContent .bannerBtn:hover
+{
+    background-color: #ff3b52;
+    color: #fff;
+}
+/* Banner Section End   */
+
+
+/* About Section Start  */
+.about
+{
+    width: 100%;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff
+}
+.about .aboutContent
+{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    /* border: 2px solid #000; */
+}
+.about .aboutContent .imgBx img
+{
+    object-fit: cover;
+    width: 600px;
+}
+.about .aboutContent .details
+{
+    padding: 20px 40px;
+}
+.about .aboutContent .details h2
+{
+    font-family: 'Style Script', cursive;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 4em;
+}
+.about .aboutContent .details h2 span
+{
+    font-family: 'Style Script', cursive;
+    color: #fc5a6d;
+    font-size: 1em;
+    font-weight: 800;
+}
+.about .aboutContent .details p
+{
+    font-family: 'Poppins',sans-serif;
+    font-size: 1.1em;
+    font-weight: 200;
+    line-height: 1.2em;
+}
+.about .aboutContent .aboutButton .aboutbtn
+{
+    padding: 8px 30px;
+    margin-top: 20px;
+    background-color: #ff4e62;
+    color: #fff;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+.about .aboutContent .aboutButton .aboutbtn:hover
+{
+    background-color: #ff3b52;
+}
+/* About Section End  */
+
+
+/* Popular Design Section Start  */
+.popularDesign
+{
+    position: relative;
+    width: 100%;
+    padding: 100px;
+    background: url("../images/arrival_bg.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.popularDesign::before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+}
+.popularDesign .title1
+{
+    width: 100%;
+    margin-bottom: 50px;
+    text-align: center;
+    z-index: 1000;
+}
+.popularDesign .title1 h2
+{
+    font-size: 3.5em;
+    font-weight: 200;
+    color: #fff;
+    font-family: 'Style Script', cursive;
+    letter-spacing: 2px;
+}
+.popularDesign .title1 h2 span
+{
+    color: #fc5a6d;
+    letter-spacing: 0px;
+}
+.popularDesign .Designcontent
+{
+    width: 80%;
+    /* border: 2px solid #fff; */
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 1000;
+}
+.popularDesign .Designcontent .box
+{
+    width: 350px;
+    margin-bottom: 30px;
+}
+.popularDesign .Designcontent .box .imgBx img
+{
+    width: 100%;
+    /* object-fit: co; */
+}
+.popularDesign .Designcontent .box .title
+{
+    padding: 10px 20px;
+    background-color: #fff;
+
+}
+.popularDesign .Designcontent .box .title h2
+{
+    font-size: 1.6em;
+    font-family: 'Poppins',sans-serif;
+}
+.popularDesign .Designcontent .box .para
+{
+    padding: 0px 20px;
+    background-color: #fff;
+
+}
+.popularDesign .Designcontent .box .para p
+{
+    font-family: 'Poppins',sans-serif;
+    font-size: 15px;
+}
+.popularDesign .Designcontent .box .price
+{
+    padding: 10px 20px;
+    background-color: #fff;
+
+}
+.popularDesign .Designcontent .box .price h4
+{
+    font-family: 'Poppins',sans-serif;
+    font-size: 2em;
+    color: #fc5a6d;
+}
+/* Popular Design Section End  */
+
+
+/* FAQ Section Start  */
+.faqSection
+{
+    position: relative;
+    width: 100%;
+    min-height: 80vh;
+    padding: 100px;
+    background: url("../images/choose_bg.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.faqSection .title
+{
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    width: 50%;
+}
+.faqSection .title h2
+{
+    font-family: 'Style Script', cursive;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 4em;
+}
+.faqSection .title h2 span
+{
+    font-family: 'Style Script', cursive;
+    color: #fc5a6d;
+    font-size: 1em;
+    font-weight: 800;
+}
+.faqSection .content
+{
+    width: 50%;
+}
+/* FAQ Section End  */
+
+
+
+/* Our Expert Section Start  */
+.expert
+{
+    width: 100%;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.expert .title
+{
+    width: 100%;
+}
+.expert .title h2
+{
+    font-family: 'Style Script', cursive;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 4em;
+    letter-spacing: 4px;
+    text-align: center;
+    
+}
+.expert .title h2 span
+{
+    font-family: 'Style Script', cursive;
+    color: #fc5a6d;
+    font-size: 1em;
+    font-weight: 800;
+}
+.expert .expertContent
+{
+    width: 70%;
+    padding: 10px 20px;
+    /* border: 1px solid #000; */
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.expert .expertContent .box
+{
+    width: 49%;
+    /* border: 1px solid #111; */
+    display: flex;
+    background-color: #fc5a6d;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.expert .expertContent .box .para
+{
+    padding: 10px 10px;
+}
+.expert .expertContent .box .para h2
+{
+    font-family: 'Style Script', cursive;
+    color: #fff;
+    font-weight: 200;
+    font-size: 1.8em;
+    letter-spacing: 2px;
+}
+.expert .expertContent .box .para h3
+{
+    color: #fff;
+    font-family: 'poppins',sans-serif;
+    padding-left: 8px;
+    font-weight: 200;
+    font-size: 1em;
+    text-transform: capitalize;
+}
+.expert .expertContent .box .para p
+{
+    position: relative;
+    margin-top: 10px;
+    color: #fff;
+    font-family: 'Poppins',sans-serif;
+    padding-left: 10px;
+    font-weight: 200;
+    margin-bottom: 20px;
+}
+.expert .expertContent .box .para i
+{
+    color: #fff;
+    padding-left: 10px;
+    margin-top: 40px;
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+.expert .expertContent .box .imgBx img
+{
+    height: 100%;
+}
+/* Our Expert Section End  */
+
+/* Testimonial Section Start  */
+.testimonials
+{
+    position: relative;
+    width: 100%;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url("../images/customer_bg.jpg");
+    background-size: cover;
+}
+.testimonials::before
+{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.testimonials .title
+{
+    width: 100%;
+    text-align: center;
+    z-index: 1000;
+}
+.testimonials .title h2
+{
+    font-family: 'Style Script', cursive;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 4em;
+    letter-spacing: 4px;
+    text-align: center;
+    color: #fff;
+}
+.testimonials .title h2 span
+{
+    font-family: 'Style Script', cursive;
+    color: #fc5a6d;
+    font-size: 1em;
+    font-weight: 800;
+}
+.testimonials .testimonialContent
+{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    z-index: 1000;
+}
+.testimonials .testimonialContent .box
+{
+    width: 30%;
+    text-align: center;
+    padding: 20px 15px;
+}
+.testimonials .testimonialContent .box .para h2
+{
+    color: #fc5a6d;
+    font-family: 'poppins',sans-serif;
+}
+.testimonials .testimonialContent .box .para p
+{
+    color: #fff;
+    font-family: 'poppins',sans-serif;
+}
+/* Testimonial Section End  */
+
+
+/* Our Clients Section Start */
+.clients
+{
+    width: 100%;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fc5a6d;
+}
+.clients .title
+{
+    width: 100%;
+    text-align: center;
+}
+.clients .title h2
+{
+    color: #fff;
+    font-family: 'Style Script', cursive;
+    font-size: 4em;
+    letter-spacing: 5px;
+    font-weight: 600;
+}
+.clients .title h2 span
+{
+    color: #000;
+}
+.clients .clientContent
+{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+/* Our Clients Section End */
+

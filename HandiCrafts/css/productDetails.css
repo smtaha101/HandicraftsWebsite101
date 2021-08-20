@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background-color: #ffb8c1;
+}
+::-webkit-scrollbar
+{
+    background-color: #111;
+    width: 15px;
+}
+::-webkit-scrollbar-thumb
+{
+    background-color: #fc5a6d;
+    border-radius: 20px;
+    border: 5px solid #000;
+}
+/* Header Section Start  */
+header
+{
+    position: relative;
+    width: 100%;
+    height: 15vh;
+    padding: 0px 250px;
+    background: url("../images/header_bg.jpg");
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header::before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+header .logo
+{
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+header .searchBar
+{
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 1000;
+}
+header .searchBar .searchbox
+{
+    display: flex;
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 2px;
+    padding: 8px 5px;
+    height: 5vh;
+}
+header .searchBar .searchbox input
+{
+    width: 85%;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    font-size: 15px;
+    background-color: transparent;
+    color: #fff;
+}
+header .searchBar .searchbox input::placeholder
+{
+    color: rgba(255, 255, 255);
+    letter-spacing: 1px;
+}
+header .searchBar .searchbox button
+{
+    width: 50px;
+    height: 100%;
+    background-color: #fc5a6d;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 0px;
+    cursor: pointer;
+}
+/* Header Section End  */
+
+/* Navigation Section Start  */
+nav
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8vh;
+    background-color: #fc5a6d;
+}
+nav ul
+{
+    display: flex;
+    height: 100%;
+}
+nav ul li
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+    margin-left: 80px;
+    height: 100%;    
+    transition-duration: 0.3s;
+}
+nav ul li:hover
+{
+    background-color: #fff;
+}
+nav ul li:hover a
+{
+    color: #fc5a6d;
+}
+nav ul li a 
+{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: 'Style Script', cursive;
+    letter-spacing: 2px;
+    padding: 5px 10px;
+    color: #fff;
+    transition-duration: 0.5s;
+}
+/* Navigation Section End  */
+
+/* Product Details Section Start  */
+.productSection
+    {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        padding: 100px;
+        background: url("../images/arrival_bg.jpg");
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .productSection::before
+    {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.8);
+    }
+    .productSection .detailsCard
+    {
+        width: 70%;
+        background-color: #111;
+        height: 65vh;
+        z-index: 1000;
+        display: flex;
+    }
+    .productSection .detailsCard .productImage
+    {
+        width: 45%;
+        /* border-right: 1px solid #000; */
+    }
+    .productSection .detailsCard .productImage img
+    {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .productSection .detailsCard .productDetails
+    {
+        width: 55%;
+        /* border-left: 1px solid red; */
+        padding: 20px 5px 20px 40px;
+        /* font-family: 'poppins',sans-serif; */
+
+    }
+    .productSection .detailsCard .productDetails h1
+    {
+        font-size: 3em;
+        font-weight: 300;
+        margin-bottom: 5px;
+        color: #eee;
+        text-transform: capitalize;
+        letter-spacing: 4px;
+        font-family: 'Style Script', cursive;
+    }
+    .productSection .detailsCard .productDetails h6
+    {
+        color: rgb(153, 153, 153);
+        font-size: 15px;
+        font-weight: 300;
+        position: relative;
+    }
+    .productSection .detailsCard .productDetails p
+    {
+        font-size: 0.9em;
+        font-weight: 200;
+        margin-bottom: 15px;
+        color: rgb(224, 224, 224);
+        font-family: 'poppins',sans-serif;
+        line-height: 1.2em;
+    }
+    .productSection .detailsCard .productDetails h2
+    {
+        font-size: 2em;
+        color: #fc5a6d;
+        margin-bottom: 8px;
+    }
+    .productSection .detailsCard .productDetails ul
+    {
+        display: flex;
+        margin-bottom: 15px;
+    }
+    .productSection .detailsCard .productDetails ul li
+    {
+        margin-right: 20px;
+        margin-left: 2px;
+        list-style: none;
+        color: rgb(224, 224, 224);
+    }
+    .productSection .detailsCard .productDetails .term li
+    {
+        color: rgb(224, 224, 224);   
+        /* margin-bottom: 5px; */
+        font-family: 'poppins',sans-serif;
+        font-size: 0.9em;
+    }
+    .productSection .detailsCard .productDetails button
+    {
+        width: 97%;
+        background-color: #ca4e5d;
+        text-align: center;
+        color: #fff;
+        padding: 12px 10px;
+        margin-top: 20px;
+        border: none;
+        font-size: 1.2em;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        cursor: pointer;
+        transition-duration: 0.2s;
+    }
+    .productSection .detailsCard .productDetails button:hover
+    {
+        background-color: #ff687a;
+    }
+/* Product Details Section End  */

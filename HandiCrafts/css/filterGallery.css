@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.section
+{
+    width: 100%;
+    min-height: 100vh;
+    /* padding: 20px; */
+    margin: 20px auto;
+}
+.section ul
+{
+    display: flex;
+    padding-left: 10px;
+}
+.section ul li
+{
+    list-style: none;
+    background-color: #eee;
+    color: #000;
+    padding: 8px 20px;
+    margin: 5px 5px;
+    cursor: pointer;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    border: 1px solid rgb(201, 201, 201);
+}
+.section ul li.active
+{
+    background-color: #ff4e62;
+    color: #fff;
+}
+.section ul li:hover
+{
+    background-color: #c73b4b;
+    color: #fff;
+}
+.section .products
+{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.section .products .itemBox
+{
+    position: relative;
+    width: 365px;
+    height: 350px;
+    margin: 6px;
+}
+.section .products .itemBox img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

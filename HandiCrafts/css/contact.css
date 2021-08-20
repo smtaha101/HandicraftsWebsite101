@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar
+{
+    background-color: #111;
+    width: 15px;
+}
+::-webkit-scrollbar-thumb
+{
+    background-color: #fc5a6d;
+    border-radius: 20px;
+    border: 5px solid #000;
+}
+/* Header Section Start  */
+header
+{
+    position: relative;
+    width: 100%;
+    height: 15vh;
+    padding: 0px 250px;
+    background: url("../images/header_bg.jpg");
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header::before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+header .logo
+{
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+header .searchBar
+{
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 1000;
+}
+header .searchBar .searchbox
+{
+    display: flex;
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 2px;
+    padding: 8px 5px;
+    height: 5vh;
+}
+header .searchBar .searchbox input
+{
+    width: 85%;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    font-size: 15px;
+    background-color: transparent;
+    color: #fff;
+}
+header .searchBar .searchbox input::placeholder
+{
+    color: rgba(255, 255, 255);
+    letter-spacing: 1px;
+}
+header .searchBar .searchbox button
+{
+    width: 50px;
+    height: 100%;
+    background-color: #fc5a6d;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 0px;
+    cursor: pointer;
+}
+/* Header Section End  */
+
+/* Navigation Section Start  */
+nav
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8vh;
+    background-color: #fc5a6d;
+}
+nav ul
+{
+    display: flex;
+    height: 100%;
+}
+nav ul li
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+    margin-left: 80px;
+    height: 100%;    
+    transition-duration: 0.3s;
+}
+nav ul li:hover
+{
+    background-color: #fff;
+}
+nav ul li:hover a
+{
+    color: #fc5a6d;
+}
+nav ul li a 
+{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: 'Style Script', cursive;
+    letter-spacing: 2px;
+    padding: 5px 10px;
+    color: #fff;
+    transition-duration: 0.5s;
+}
+/* Navigation Section End  */
+
+/* Banner Section Start  */
+.main
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(../images/contact1_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 100px;
+}
+.main::before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.82);
+}
+.main .title
+{
+    z-index: 1000;
+}
+.main .title h2
+{
+    position: relative;
+    font-size: 4.5em;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 3px;
+    font-family: 'Style Script', cursive;
+    color: #fc5a6d;
+}
+.main .title h2::before
+{
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -12px;
+    width: 80%;
+    height: 1px;
+    background-color: #a03b47;
+}
+.main .contactForm
+{
+    z-index: 1000;
+    margin-top: 50px;
+    width: 60%;
+    /* border: 2px solid #fff; */
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+}
+.main .contactForm form
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.main .contactForm input
+{
+    width: 80%;
+    padding: 12px 20px;
+    border: none;
+    outline: none;
+    background-color: #222;
+    box-shadow: 0 0 5px #bd4c59;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.main .contactForm input:focus
+{
+    outline: 2px solid #fc5a6d;
+}
+.main .contactForm textarea
+{
+    width: 80%;
+    height: 100px;
+    padding: 12px 20px;
+    border: none;
+    outline: none;
+    background-color: #222;
+    color: #fff;
+    margin-bottom: 15px;
+    resize: none;
+    box-shadow: 0 0 5px #bd4c59;
+}
+.main .contactForm textarea:focus
+{
+    outline: 2px solid #fc5a6d;
+}
+.main .contactForm input::placeholder,
+.main .contactForm textarea::placeholder
+{
+    color: #fff;
+}
+.main .contactForm input[type="submit"]
+{
+    padding: 15px 20px;
+    background-color: #fc5a6d;
+    width: 20%;
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 2px;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+.main .contactForm input[type="submit"]:hover
+{
+    background-color: #a03b47;
+}
+/* Banner Section End   */
